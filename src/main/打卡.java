@@ -18,7 +18,7 @@ public class 打卡 {
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String landing = localDateTime.format(format);
         String message = landing + "  打卡\n";
-        String filePath = "E:\\test\\README.md";
+        String filePath = System.getProperty("user.dir")+"/README.md";
         RandomAccessFile raf=new RandomAccessFile(filePath,"rw");
         boolean flag = false;
         String s;
@@ -32,11 +32,12 @@ public class 打卡 {
         if(flag){
             raf.seek(raf.getFilePointer()-28);
             raf.write(message.getBytes());
-            System.out.println("更新成功！");
+            System.out.print("更新成功！");
         }else {
             raf.write(message.getBytes());
-            System.out.println("打卡成功！");
+            System.out.print("打卡成功！");
         }
+        System.out.println(landing);
         raf.close();
     }
 }
