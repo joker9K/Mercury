@@ -1,4 +1,4 @@
-package main.think_in_java;
+package main.think_in_java.generics;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,4 @@
-package main.think_in_java;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+package main.think_in_java.generics;
 
 /**
  * Created by zhangwt on 2017/4/7.

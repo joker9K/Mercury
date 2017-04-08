@@ -1,4 +1,4 @@
-package main.think_in_java;
+package main.think_in_java.generics;
 
 /**
  * Created by zhangwt on 2017/4/7.
