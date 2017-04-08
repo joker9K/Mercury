@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * Created by zhangwt on 2017/4/8.
- *
  */
 
 class Fruit{
@@ -45,5 +44,15 @@ public class GenericsAndCovariance {
         //Compile Error,the same as eg1
 //        list2.add(1);
 //        list2.add("s");
+    }
+
+    private void test1(List<? extends Apple> list){
+        //Compile Error
+        //list.add(new Apple());
+    }
+    //超类型通配符
+    private void test2(List<? super Fruit> list){
+        list.add(new Apple());
+        list.add(new Fruit());
     }
 }
