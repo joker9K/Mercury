@@ -1,10 +1,8 @@
 package main;
 
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Map;
-
+import java.math.BigDecimal;
+import java.util.*;
 
 
 public class Test{
@@ -20,5 +18,9 @@ public class Test{
         test.f(1.0f);
         test.f('c');
         test.f(true);
+
+        BigDecimal bigDecimal = new BigDecimal("1.6");
+        System.out.println(bigDecimal.ulp());
+
     }
 }
