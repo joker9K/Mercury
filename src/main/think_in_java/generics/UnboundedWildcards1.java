@@ -8,6 +8,7 @@ import java.util.StringJoiner;
 /**
  * Created by zhangwt on 2017/4/8.
  * 无界通配符<?>
+ * 如果向一个使用<?>的方法传递原生类型,那么对编译器来说,可能会推断出实际的类型参数,使得这个方法可以回转并调用另一个使用这个确切类型的方法
  */
 public class UnboundedWildcards1 {
     static List list1;
