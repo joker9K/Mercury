@@ -15,12 +15,14 @@ public class BlockingQueueTest {
 
         //生产者,将水果放入篮子
         public void produce() throws InterruptedException {
-            basket.put("an apple");
+            //basket.put("an apple");//自旋等待
+            basket.add("an apple");//
         }
 
         //消费者,将篮子中的水果取出
         public String consume() throws InterruptedException {
-            return basket.take();
+            //return basket.take();//自旋等待
+            return basket.remove();//抛出异常
         }
     }
 
