@@ -7,7 +7,7 @@ import java.time.temporal.ChronoUnit;
  * @Date 2017/3/30 16:19.
  * Copyright © mizhuanglicai
  */
-public class LocalDate {
+public class LocalDateTest {
 
     public static void main(String[] args) {
         //Create date LocalDate

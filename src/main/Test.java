@@ -28,6 +28,23 @@ public class Test{
 //    }
 
     public static void main(String[] args) {
-        new Test5();
+        String string = " ssss ";
+        char[] chars = string.toCharArray();
+
+        int len = chars.length;
+        int st = 0;
+        char[] val = chars;    /* avoid getfield opcode */
+
+        while ((st < len) && (val[st] <= ' ')) {
+            st++;
+        }
+        while ((st < len) && (val[len - 1] <= ' ')) {
+            len--;
+        }
+        if((st > 0) || (len < val.length)){
+            System.out.println(string.substring(st,len));
+        }else {
+            System.out.println(string);
+        }
     }
 }

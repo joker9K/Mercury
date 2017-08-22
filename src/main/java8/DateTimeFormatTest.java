@@ -2,13 +2,14 @@ package main.java8;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 /**
  * @author supo
  * @Date 2017/3/30 16:29.
  * Copyright © mizhuanglicai
  */
-public class DateTimeFormat {
+public class DateTimeFormatTest {
 
     public static void main(String[] args) {
         java.time.LocalDateTime localDateTime = LocalDateTime.now();

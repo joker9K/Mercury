@@ -3,7 +3,10 @@ package main.test;
 
 import java.io.IOException;
 import java.net.*;
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.List;
+import java.util.Properties;
 
 /**
  * Created by zhangwt on 2017/5/3.
@@ -28,15 +31,11 @@ public class Test9 {
 //                    System.out.println(i.getHostAddress());
 //                }
 //            }
-
-        Socket socket = new Socket();
-        try {
-            socket.connect(new InetSocketAddress("www.baidu.com", 80));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println(socket.getLocalAddress());
-
+//        Properties prop = System.getProperties();
+//
+//        String os = prop.getProperty("os.name");
+//        prop.setProperty("os.name","Linux");
+//        System.out.println(os);
 
 //            InetAddress address = InetAddress.getLocalHost();//获取的是本地的IP地址 //PC-20140317PXKX/192.168.0.121
 //            System.out.println(address.getHostName());
@@ -52,4 +51,7 @@ public class Test9 {
 //            e.printStackTrace();
 //        }
     }
+
+
+
 }
